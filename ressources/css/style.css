@@ -1,0 +1,49 @@
+/* INFORMATIONS
+
+    - TITLE:   AMS-Manu
+    - VERSION: 2.0.0
+    - AUTHOR:  Sebastien REYNAUD
+    */
+
+    /*  FONTS
+
+        - DEFAULT: 'Arial'
+        - H1:      'Arial'
+
+*/
+
+/*      COLORS
+
+    - DEFAULT: black
+
+    */
+
+
+    /*                         BODY                            */
+.box{
+    background-color: #fff;
+    color: #fff;
+}
+    body{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+                                ""
+    }
+
+    /*                         HEADER                            */
+
+img{
+    width: 100px;
+}
+
+    /*                         NAV                            */
+    /*                         BOX-1                            */
+    /*                         BOX-2                          */
+    /*                         BOX-3                            */
+    /*                         BOX-4                            */
+    /*                         BOX-5                            */
+    /*                         FOOTER                            */
+
+
