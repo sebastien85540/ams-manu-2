@@ -11,23 +11,56 @@
     <link rel="stylesheet" href="/ressources/css/style.css">
     
     <!--                           FONTS                                   -->
+    
+    
     <!--                           ICONS                                   -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
 </head>
 <body>
-    <header class="logo box">
-        <a href="/ressources/images/ams-manu.jpg"><img src="/ressources/images/ams-manu-mini.jpg" alt="AMS-Manu"></a>
-    </header>  
-        <nav class="menu box navbar navbar-expand-md navbar-dark bg-light fixed-top">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#" aria-label="Menu pour mobile" aria-controls="monmenu">
+    <header>
+   
+        <nav class="menu box navbar navbar-expand-md navbar-light bg-light fixed-top">
+                <a href="/ressources/images/ams-manu.jpg"><img src="/ressources/images/ams-manu-mini.jpg" alt="AMS-Manu"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monmenu" aria-label="Menu pour mobile" aria-controls="monmenu">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="Monmenu">
-                        <a href="#" class="nav-items nav-link">Qui sommes nous</a>
+                        <div class="navbar-nav ml-auto">
+                         <a class="nav-items nav-link" href="#accueil">Menu</a>
+                        <a href="#nous" class="nav-items nav-link">Qui sommes nous</a>
                         <a href="#" class="nav-items nav-link">Ventes</a>
                         <a href="#" class="nav-items nav-link">Galerie photos</a>
                         <a href="#" class="nav-items nav-link">Nos forfaits</a>
                         <a href="#" class="nav-items nav-link">Contact</a>
-                        </div>
+                        <span class="nav-items nav-link" data-toggle="modal" data-target="#exampleModal"><i class="fab fa-whmcs"></i></span>
+                    </div>
+                    </div>
     </nav>
+</header>  
+    <main class="main">
+        <article class="box box-0" id="accueil">
+                <h1>AMS-Manu</h1>
+                <p>Auto Multi Services</p>
+        </article>
+        <article class="box box-1" id="nous">
+                <div class="histoire-1">
+                        <h3>Mon histoire</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatum placeat voluptate doloribus odio explicabo optio id voluptates sit hic quo, architecto recusandae! Ipsum ea explicabo, placeat consequuntur autem debitis.</p>
+                    </div>
+                    <div class="histoire-2">
+                        <h3>Nos services</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet aut ad ea, beatae unde fugiat dolore blanditiis cumque minima, hic, quibusdam laboriosam sed harum aspernatur sit omnis delectus porro?</p>
+                    </div>
+        
+            </article>
+        <article class="box " id="ventes">
+            
+        </article>
+        <article class="box" id="galerie"></article>
+        <article class="box" id="forfaits"></article>
+        <article class="box" id="contact"></article>
+    </main>
     <footer class="footer box"></footer>
 </html>
