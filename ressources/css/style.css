@@ -22,23 +22,30 @@
     /*                         BODY                            */
 .box{
     background-color: #fff;
-    color: #fff;
+    color: #eee;
 }
     body{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas: 
-                                ""
+                                "logo logo nav nav nav nav"
+                                "main main main main main main"
+                                "main main main main main main"
     }
 
     /*                         HEADER                            */
 
-img{
-    width: 100px;
-}
+
 
     /*                         NAV                            */
+
+    /*                         BOX-0                            */
+.box-0{
+    background-image: url(/ressources/images/reparations.jpg);
+    background-size: cover;
+    height: 90vh;
+}
     /*                         BOX-1                            */
     /*                         BOX-2                          */
     /*                         BOX-3                            */
