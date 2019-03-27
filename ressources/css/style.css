@@ -26,58 +26,72 @@
 }
     body{
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: 100%;
         grid-template-rows: repeat(6, auto);
         grid-template-areas: 
-                                "logo logo nav nav nav nav"
-                                ""
-                                ""
+                                "logo nav"
+                                "box-0"
+                                "box-1"
+                                "box-2"
+                                "box-3"
+                                "box-4"
+                                "box-5";
     }
 
     /*                         HEADER                            */
 header img{
-    height: 90px;
+    height: 40px;
 }
-.nav{
-    height: 100px;
-}
-
-
 .menu{
-    grid-column: span 6;
     border: 2px solid purple;
-}
-.main{
-    grid-column: span 6;
+    height: 50px;
 }
     /*                         BOX-0                            */
 .box-0{
+    display: grid;
     background-image: url(/ressources/images/reparations.jpg);
     background-size: cover;
-    height: 120vh;
+    height: 100vh;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8,1fr);
 }
-h1, p, h3{
-    padding-top: 100px;
-    text-align: center;
+.title{
+    margin-top: 273px;
+    margin-left: 515px;
+    color: #fff;
 }
+
     /*                         BOX-1                            */
 
     .box-1{
         background-image: url(/ressources/images/histoire.jpg);
         background-size: cover;
-        height: 100vh;
+        height: 120vh;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: ""
+                             ""
+                             "histoire-1"
+                                ""
+                             "histoire-2"
+                             ""
     }
 .histoire-1{
-    padding-top: 200px;
-    grid-column-start: 2 /span 5;
-    grid-row-start: 2 span 5;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #eee;
+    grid-area: 4/3/6/7;
+    box-shadow: 10px 10px 10px black;
+        
 }
 .histoire-2{
-    grid-column: 2 / span 5;
-    grid-row: 3 / span 5;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    grid-area: 7/3/8/7;
+    box-shadow: 10px 10px 10px black;
+    
 }    
     /*                         BOX-2                          */
     /*                         BOX-3                            */
