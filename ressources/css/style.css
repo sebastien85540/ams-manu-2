@@ -56,8 +56,7 @@ header img{
     grid-template-rows: repeat(8,1fr);
 }
 .title{
-    margin-top: 273px;
-    margin-left: 515px;
+    grid-area: 5/3/6/4;
     color: #fff;
 }
 
@@ -66,22 +65,20 @@ header img{
     .box-1{
         background-image: url(/ressources/images/histoire.jpg);
         background-size: cover;
-        height: 120vh;
+        height: 100vh;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: ""
-                             ""
+        grid-template-areas: 
                              "histoire-1"
-                                ""
-                             "histoire-2"
-                             ""
+                             "histoire-2";
+                             
     }
 .histoire-1{
     border: 1px solid black;
     border-radius: 20px;
     background-color: #eee;
-    grid-area: 4/3/6/7;
+    grid-area: 4/3/5/6;
     box-shadow: 10px 10px 10px black;
         
 }
@@ -89,14 +86,112 @@ header img{
     border: 1px solid black;
     border-radius: 20px;
     background-color: #fff;
-    grid-area: 7/3/8/7;
+    grid-area: 6/3/7/6;
     box-shadow: 10px 10px 10px black;
     
-}    
+} 
+h3{
+    text-align: center;
+    color: rebeccapurple;
+}   
     /*                         BOX-2                          */
+
+    .box-2{
+        background-image: url(/ressources/images/vente.jpg);
+        background-size: cover;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: "ventes";
+       
+}
+.ventes{
+    grid-area: 3/2/6/6
+}
+
+
+table img{
+    height: 100px;
+
+}
+table{
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 0 purple;
+}
+
+
     /*                         BOX-3                            */
+
+    .box-3{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+                             "galerie";
+
+        background-color: #eee;
+        height: 100vh;
+    }
+
+    .galerie{
+        grid-area: 2/3/6/7;
+    }
+    .galerie img{
+        height: 500px;
+    }
     /*                         BOX-4                            */
+
+.box-4{
+    display: grid;
+    grid-template-columns: auto 10% 10% 10% auto;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:    "h3"
+                            "forfaits-1 forfaits-2 forfaits-3 ";
+    background-color: #d9ecd0;
+    height: 80vh;
+    grid-gap: 40px;
+}
+.forfaits-title{
+    grid-column: 3;
+    grid-row: 3;
+}
+.forfaits-1, .forfaits-2, .forfaits-3{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(216, 173, 173);
+    height: 300px;
+   
+    
+}
+.forfait-title{
+    border-bottom: 1px dashed black;
+}
+.forfait-content{
+    margin-top: 20px;
+}
+.forfaits-1{
+    grid-column: 2;
+    grid-row: 5;
+}
+.forfaits-2{
+    grid-column: 3;
+    grid-row: 5;
+}
+.forfaits-3{
+    grid-column: 4;
+    grid-row: 5;
+}
     /*                         BOX-5                            */
     /*                         FOOTER                            */
 
-
+footer{
+    background-color: black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "p a "
+}
+.footer a{
+    grid-column: 2;
+}
