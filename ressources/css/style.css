@@ -61,8 +61,8 @@ header img {
 }
 
 .title {
-    grid-area: 5/3/6/4;
-    color: #fff;
+    grid-area: 6/4/6/4;
+    color: rgb(56, 124, 79);
 }
 
 /*                         BOX-1                            */
@@ -234,12 +234,31 @@ table {
                             "input-group"
                             "btn";
 }
+.identite, .adresse, .input-group{
+    height: 20px;
+}
 
  
 .map{
     grid-column: 2;
     height: 200px;
     border: 0;
+    margin-top: 20%;
+}
+#address-1{
+    padding-left: 200px;
+    padding-bottom: 25px;
+    margin-bottom: 35px;    
+}
+.identite{
+    padding-top: 65px;
+}
+.checkbox{
+    margin-top: -65px;
+}
+.message{
+    text-align: center;
+    margin-top: -65px;
 }
  
 
@@ -252,4 +271,4 @@ table {
     text-align: center;
 }
 
-
+@media all and (max-width:)
